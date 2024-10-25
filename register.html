@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Registro de Usuario</title>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Usuario</h2>
+    <input type="text" id="username" placeholder="Nombre de Usuario" required>
+    <input type="email" id="email" placeholder="Correo Electrónico" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <button id="registerBtn">Registrar</button>
+    <div id="message" class="message"></div>
+    <div class="login-link">
+        <p class="login-prompt">¿Tienes cuenta? <a href="./login.html" class="login-link">Inicia sesión aquí</a></p>
+
+        <style>
+            .login-prompt {
+                color: #C0C0C0; /* Color del texto del párrafo */
+                text-align: center; /* Centrar el texto */
+                margin-top: 20px; /* Margen superior */
+            }
+        
+            .login-link {
+                color: #8b0000; /* Color del enlace */
+                text-decoration: none; /* Sin subrayado en el enlace */
+                transition: color 0.3s; /* Transición suave para el color del enlace */
+            }
+        
+            .login-link:hover {
+                color: #5c0000; /* Cambia el color al pasar el ratón */
+            }
+        </style>
+        
+    </div>
+</div>
+
+<script>
+    document.getElementById('registerBtn').addEventListener('click', async () => {
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        const response = await fetch('http://localhost:3001/api/auth/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, email, password }),
+        });
+
+        const data = await response.json();
+        const messageDiv = document.getElementById('message');
+
+        if (response.ok) {
+            messageDiv.textContent = data.message;
+            messageDiv.classList.remove('error');
+
+            // Redirigir a index.html después de un registro exitoso
+            setTimeout(() => {
+                window.location.href = './index.html';
+            }, 2000); // Espera 2 segundos antes de redirigir
+        } else {
+            messageDiv.textContent = data.message;
+            messageDiv.classList.add('error');
+        }
+    });
+</script>
+
+</body>
+</html>

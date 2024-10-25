@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELKE-BAR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./js/main.js">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        </header>
+        <aside>
+            
+            <header class="header-mobile">
+                <h1 class="logo">ELKE-BAR</h1>
+                <button class="menu-button"><i class="bi bi-list"></i></button>
+            </header>
+
+        <!--logo de la pagina-->
+<!--logo de la pagina-->
+<header style="display: flex; align-items: center;">
+    <div style="background-color: #f4f4dc; padding: 8px; border-radius: 15px;">
+        <img src="img/log.png" alt="Logo de ELE-BAR" class="logo-imagen" style="width: 200px; height: auto; border-radius: 15px;">
+    </div>
+</header>
+
+
+
+
+            
+            <nav>
+
+                <!-- Buscador -->
+                <main>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Buscar...">
+                        <button id="search-button"><i class="bi bi-search"></i></button>
+                    </div>
+                </main>
+
+                <!--categorias-->
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"> <i class="bi bi-arrow-up-square"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="Cerveza" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Cervezas</button>
+                    </li>
+                    <li>
+                        <button id="Cocteles" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Cocteles</button>
+                    </li>
+                    <li>
+                        <button id="Sin Alcohol" class="boton-menu boton-categoria"><i class="bi bi-arrow-up-square"></i> Bebidas sin alcohol</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-plus-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+    
+        </aside>
+
+        <!--Filtros-->
+        <main>
+            <div class="titulo-filtro-container">
+                <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+                <button id="toggle-filtros"> </button>
+            </div>
+            <div class="filtros-wrapper">
+                <div id="filtros" class="filtros oculto">
+                    <h3></h3>
+                   
+                   
+                  
+                  
+                    <button id="aplicar-filtros"></button>
+                </div>
+            </div>
+
+            <!--contenedor de los productos cargados-->
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+
+        </main>
+    </div>
+    
+    <!--informacion final de la pagina -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EMPRESA</h3>
+                <ul>
+                    <li><a href="#" ><span>Nuestra historia</span></a></li>
+
+                </ul>
+            </div>
+         
+            <div class="footer-section">
+                <div class="social-icons">
+                    <h3> Nuestras redes sociales </h3>
+                    <a href="https://www.facebook.com/profile.php?id=61567352466770" target="_blank" ><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/elke__bar/?hl=es" target="_blank" ><i class="bi bi-instagram"></i></a>
+                    
+        
+                </div>
+                <div class="footer-section" style="margin-top: 40px;">
+                    <h3>Pagina realizada por: </h3>
+                    <ul>
+                        <li><a target="_blank"><span>Luis Angel Huanca Yujra</span></a></li>
+                        <li><a target="_blank"><span>Kevin Anthony Barrios Vacaflores </span></a></li>
+                        <li><a target="_blank"><span>Alizon Dafne Ruiz Ricalde</span></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

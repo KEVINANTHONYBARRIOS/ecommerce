@@ -1,0 +1,270 @@
+:root {
+    --clr-main: #001F3F; /* Azul oscuro */
+    --clr-main-light: #001F3F; /* Azul oscuro */
+    --clr-white: #FFFFFF; /* Blanco */
+    --clr-gray: #C0C0C0; /* Plateado */
+    --clr-red: #8b0000; /* Rojo oscuro para acentos */
+}
+
+/* Asegura que html y body ocupen el 100% de la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-main); /* Fondo global azul oscuro */
+    color: var(--clr-gray); /* Texto plateado */
+    font-family: Arial, sans-serif;
+}
+
+/* Sección principal para ocupar todo el espacio disponible */
+.main-content {
+    min-height: calc(100vh - 56px); /* Altura total menos la altura de la navbar */
+    width: 100%;
+    background-color: var(--clr-main); /* Asegura que toda la sección principal tenga el fondo oscuro */
+}
+
+/* Estilos del carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-item {
+    transition: transform 0.8s ease-in-out; /* Transición suave */
+}
+
+/* Estilo para la sección de bienvenida */
+.welcome-section {
+    background-color: var(--clr-main); /* Fondo oscuro */
+    text-align: center;
+    padding: 50px 0;
+    margin: 50px 0 0 0; /* Añade margen superior para mover la sección más abajo */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.welcome-section h1 {
+    font-family: 'Dancing Script', cursive; /* Aplica Dancing Script */
+    font-size: 3em; /* Tamaño del título */
+    color: var(--clr-white); /* Blanco para resaltar más en el fondo oscuro */
+}
+
+.welcome-section p {
+    font-family: 'Dancing Script', cursive; /* Aplica Dancing Script */
+    font-size: 1.5em; /* Tamaño del texto */
+    color: var(--clr-white); /* Blanco */
+}
+
+/* Sección de tarjetas */
+.cards-section {
+    padding: 40px 0;
+    margin: 0; /* Elimina cualquier margen que pueda generar espacios en blanco */
+    text-align: center;
+    width: 100%;
+    background-color: var(--clr-main); /* Fondo oscuro igual al resto del sitio */
+    box-sizing: border-box;
+}
+
+/* Estilo del título de la sección de tarjetas */
+.cards-section h2 {
+    font-family: 'Georgia', serif;
+    color: var(--clr-white); /* Texto blanco */
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para las tarjetas (cards) */
+.card {
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #F5F5F5; /* Fondo claro para las tarjetas */
+    color: #1F2E3F; /* Texto oscuro para mayor contraste */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 86, 179, 0.5); /* Sombra más pronunciada en azul */
+}
+
+.card:hover img {
+    filter: brightness(1.2); /* Iluminación con un brillo al pasar el ratón */
+}
+
+/* Estilo del texto dentro de las tarjetas */
+.card-body {
+    font-family: 'Arial', sans-serif;
+    color: #1F2E3F; /* Texto oscuro para mayor contraste */
+}
+
+/* Estilo para botones y enlaces */
+.btn {
+    background-color: var(--clr-main-light); /* Azul Claro */
+    color: var(--clr-white);
+}
+
+/* Cambia el color del texto al pasar el ratón sobre enlaces y botones */
+a:hover, .btn:hover {
+    color: var(--clr-white);
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #1F2E3F; /* Color de fondo */
+    color: var(--clr-white); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.footer-content {
+    display: flex; /* Usar flexbox para la distribución */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+}
+
+.footer-left {
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.footer-center {
+    text-align: center; /* Alinear texto al centro */
+    flex: 1; /* Permitir que el centro ocupe espacio adicional */
+}
+
+.footer-right {
+    text-align: right; /* Alinear texto a la derecha */
+}
+
+/* Estilos para el eslogan en la barra de navegación */
+.navbar-slogan {
+    font-family: 'Dancing Script', cursive; /* Aplica Dancing Script */
+    font-size: 4em; /* Aumenta el tamaño de la fuente */
+    color: var(--clr-gray); /* Color plateado para combinar con el diseño */
+    margin-left: auto; /* Esto empuja el eslogan a la derecha */
+    margin-right: 15px; /* Espacio a la derecha */
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    align-items: center; /* Alinear verticalmente */
+    height: 100%; /* Asegura que ocupe toda la altura de la barra de navegación */
+}
+
+/* Secciones de información */
+.info-sections {
+    background-color: #1F2E3F; /* Fondo igual al del pie de página */
+    color: var(--clr-white); /* Color del texto blanco */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box;
+}
+
+.who-we-are, .mission, .vision {
+    margin-bottom: 20px; /* Espacio entre secciones */
+    padding: 15px; /* Espaciado interno para cada sección */
+    border-radius: 5px; /* Bordes redondeados */
+    color: var(--clr-white); /* Asegura que el texto sea blanco */
+}
+
+.who-we-are {
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.mission, .vision {
+    text-align: right; /* Alinear texto a la derecha */
+}
+
+/* Carrusel */
+.carousel {
+    margin-top: 50px; /* Añade margen superior para mover el carrusel más abajo */
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    background-color: var(--clr-main); /* Fondo oscuro */
+    text-align: center;
+    padding: 50px 0;
+    margin: 50px 0 0 0; /* Añade margen superior para mover la sección más abajo */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.welcome-section h1, .welcome-section p {
+    color: var(--clr-white); /* Asegura que el texto sea visible en el fondo oscuro */
+}
+
+/* Social Icons */
+.social-icons svg {
+    width: 32px; /* Aumenta el ancho de los iconos */
+    height: 32px; /* Aumenta la altura de los iconos */
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.2); /* Efecto de agrandar al pasar el mouse */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+
+
+.vision, .mission {
+    background-color: var(--clr-main-light); /* Fondo más claro para destacar */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio entre secciones */
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.vision:hover, .mission:hover {
+    transform: translateY(-5px); /* Levantar al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+h3 {
+    font-family: 'Georgia', serif; /* Cambia la fuente para un toque elegante */
+    color: var(--clr-red); /* Color del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+p {
+    font-family: 'Arial', sans-serif; /* Fuente clara y legible */
+    color: var(--clr-gray); /* Color del texto */
+    line-height: 1.6; /* Aumenta el interlineado para mejor lectura */
+}
+
+
+/* Estilos para la sección "¿Quiénes Somos?" */
+.who-we-are {
+    background-color: #1F2E3F; /* Fondo igual al del pie de página */
+    color: #FFFFFF; /* Color del texto blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto de elevación al pasar el ratón */
+}
+
+.who-we-are:hover {
+    transform: translateY(-5px); /* Elevar ligeramente al pasar el ratón */
+}
+
+.who-we-are h3 {
+    font-family: 'Georgia', serif; /* Tipografía elegante para el título */
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.who-we-are p {
+    font-family: 'Arial', sans-serif; /* Tipografía legible para el párrafo */
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 0; /* Eliminar margen inferior */
+}
+
+/* Estilo de la imagen */
+.who-we-are img {
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}

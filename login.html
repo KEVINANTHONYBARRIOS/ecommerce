@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="email" placeholder="Correo Electrónico" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <button id="loginBtn">Iniciar Sesión</button>
+    <div id="message" class="message"></div>
+    <div class="register-link">
+        <p>¿No tienes cuenta? <a href="./register.html">Regístrate aquí</a></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('loginBtn').addEventListener('click', async () => {
+        const email = document.getElementById('email').value.trim(); // Limpiar espacios
+        const password = document.getElementById('password').value.trim(); // Limpiar espacios
+
+        const response = await fetch('http://localhost:3001/api/auth/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }),
+        });
+
+        const data = await response.json();
+        const messageDiv = document.getElementById('message');
+
+        if (response.ok) {
+            messageDiv.textContent = data.message;  // Bienvenido
+            messageDiv.classList.remove('error');
+            window.location.href = './index.html'; // Redirigir a index.html en caso de éxito
+        } else {
+            messageDiv.textContent = data.message;  // Usuario inexistente o contraseña incorrecta
+            messageDiv.classList.add('error');
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+[
+    {
+        "id": "cerveza-01",
+        "titulo": "Huari",
+        "imagen": "./img/cerveza/CervezaHua.webp",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 28.00,
+        "ML": "354"
+    },
+    {
+        "id": "cerveza-02",
+        "titulo": "Corona",
+        "imagen": "./img/cerveza/cor.jpg",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 30.00,
+        "ML": "330"
+    },
+    {
+        "id": "cerveza-03",
+        "titulo": "Heineken",
+        "imagen": "./img/cerveza/hin.webp",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 30.00,
+        "ML": "330"
+    },
+    {
+        "id": "cerveza-04",
+        "titulo": "Paceña",
+        "imagen": "./img/cerveza/Paceña.webp",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 25.00,
+        "ML": "330"
+    },
+    {
+        "id": "cerveza-05",
+        "titulo": "Potosina",
+        "imagen": "./img/cerveza/Potosina.webp",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 20.00,
+        "ML": "355"
+    },
+    {
+        "id": "cerveza-06",
+        "titulo": "Burguesa",
+        "imagen": "./img/cerveza/Burguesa.webp",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 22.00,
+        "ML": "473"
+    },
+    {
+        "id": "cerveza-07",
+        "titulo": "Amstel",
+        "imagen": "./img/cerveza/Amst.jpeg",
+        "categoria": {
+            "nombre": "Cerveza",
+            "id": "Cerveza"
+        },
+        "precio": 22.00,
+        "ML": "310"
+    },
+    {
+        "id": "cocteles-01",
+        "titulo": "Mojito",
+        "imagen": "./img/cocteles/mojo.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 35.00,
+        "ML": "400"
+    },
+    {
+        "id": "cocteles-02",
+        "titulo": "Fernet",
+        "imagen": "./img/cocteles/FF.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 30.00,
+        "ML": "500"
+    },
+    {
+        "id": "cocteles-03",
+        "titulo": "Margarita",
+        "imagen": "./img/cocteles/mar.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 40.00,
+        "ML": "300"
+    },
+    {
+        "id": "cocteles-04",
+        "titulo": "Gin tonic",
+        "imagen": "./img/cocteles/Ginto.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 40.00,
+        "ML": "400"
+    },
+    {
+        "id": "cocteles-05",
+        "titulo": "Caipirinha",
+        "imagen": "./img/cocteles/Capi.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 35.00,
+        "ML": "250"
+    },
+    {
+        "id": "cocteles-06",
+        "titulo": "Manhattan",
+        "imagen": "./img/cocteles/man.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 40.00,
+        "ML": "255"
+    },
+    {
+        "id": "cocteles-07",
+        "titulo": "Daiquiri",
+        "imagen": "./img/cocteles/Dai.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 35.00,
+        "ML": "300"
+    },
+    {
+        "id": "cocteles-08",
+        "titulo": "Bloody Mary",
+        "imagen": "./img/cocteles/bloo.jpg",
+        "categoria": {
+            "nombre": "Cocteles",
+            "id": "Cocteles"
+        },
+        "precio": 50.00,
+        "ML": "415"
+    },
+    {
+        "id": "SinAlcohol-01",
+        "titulo": "Agua Vital",
+        "imagen": "./img/SinAlcohol/AgVi.webp",
+        "categoria": {
+            "nombre": "Sin Alcohol",
+            "id": "Sin Alcohol"
+        },
+        "precio": 12.00,
+        "ML": "600"
+    },
+    {
+        "id": "SinAlcohol-02",
+        "titulo": "Coca Cola",
+        "imagen": "./img/SinAlcohol/Coo.webp",
+        "categoria": {
+            "nombre": "Sin Alcohol",
+            "id": "Sin Alcohol"
+        },
+        "precio": 12.00,
+        "ML": "355"
+    },
+    {
+        "id": "SinAlcohol-03",
+        "titulo": "Red Bull",
+        "imagen": "./img/SinAlcohol/red.jpg",
+        "categoria": {
+            "nombre": "Sin Alcohol",
+            "id": "Sin Alcohol"
+        },
+        "precio": 20.00,
+        "ML": "355"
+    },
+    {
+        "id": "SinAlcohol-04",
+        "titulo": "Aquarius pera",
+        "imagen": "./img/SinAlcohol/Aqu.jpeg",
+        "categoria": {
+            "nombre": "Sin Alcohol",
+            "id": "Sin Alcohol"
+        },
+        "precio": 15.00,
+        "ML": "500"
+    },
+    {
+        "id": "SinAlcohol-05",
+        "titulo": "Schweppes tonica",
+        "imagen": "./img/SinAlcohol/Toni.jpg",
+        "categoria": {
+            "nombre": "Sin Alcohol",
+            "id": "Sin Alcohol"
+        },
+        "precio": 15.00,
+        "ML": "350"
+    }
+]

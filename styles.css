@@ -1,0 +1,95 @@
+:root {
+    --margin-left: 0; /* Margen inicial a la izquierda */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Elimina el scroll */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./img/blog/fondo1.png'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:root {
+    --margin-left: 450px; /* Margen inicial a la izquierda */
+}
+
+.container {
+    max-width: 400px; /* Mantiene un ancho más amplio para simetría */
+    margin: 150px auto; /* Mueve el contenedor hacia abajo y al centro horizontalmente */
+    padding: 40px; /* Mantiene el padding para el espacio interno */
+    background: rgba(30, 30, 30, 0.95); /* Fondo oscuro con un poco de transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más difusa para mayor profundidad */
+    position: relative; /* Añadido para que se pueda mover con top/bottom/left/right */
+    left: var(--margin-left); /* Utiliza la variable de margen a la izquierda */
+}
+
+
+h2 {
+    text-align: center;
+    color: #C0C0C0; /* Color claro para el texto del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Aumenté el padding para un área de entrada más cómoda */
+    margin: 10px 0;
+    border: 2px solid #3b3b3b; /* Color de borde más oscuro */
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input:focus {
+    border-color: #1a355b; /* Cambia el color del borde al enfocar */
+    outline: none; /* Sin contorno predeterminado */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Aumenté el padding del botón */
+    background-color: #8b0000; /* Color más oscuro para el botón */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+button:hover {
+    background-color: #5c0000; /* Color más oscuro al pasar el ratón */
+}
+
+.message {
+    margin-top: 10px;
+    text-align: center;
+    color: #5cb85c; /* Verde oscuro */
+}
+
+.error {
+    color: red;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px; /* Aumenté el margen superior */
+    color: #C0C0C0; /* Color del texto del enlace */
+}
+
+.register-link a {
+    text-decoration: none; /* Sin subrayado en el enlace */
+    color: #8b0000; /* Color más oscuro para el enlace */
+    transition: color 0.3s; /* Transición suave para el color del enlace */
+}
+
+.register-link a:hover {
+    color: #5c0000; /* Cambia el color al pasar el ratón */
+}
